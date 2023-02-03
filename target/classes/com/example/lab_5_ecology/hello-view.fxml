@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="481.0" prefWidth="636.0" spacing="20.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab_5_ecology.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <AnchorPane prefHeight="488.0" prefWidth="628.0">
+      <children>
+         <Button layoutX="415.0" layoutY="370.0" mnemonicParsing="false" onAction="#onCalculateButtonClick" prefHeight="36.0" prefWidth="187.0" text="Рассчитать" />
+         <Button layoutX="11.0" layoutY="371.0" mnemonicParsing="false" onAction="#onClearButtonClick" prefHeight="36.0" prefWidth="187.0" text="Очистить поля" />
+         <TextField fx:id="Passenger" layoutX="236.0" layoutY="27.0" prefHeight="21.0" prefWidth="118.0" promptText="Введите кол-во" />
+         <TextField fx:id="Van" layoutX="236.0" layoutY="60.0" prefHeight="25.0" prefWidth="118.0" promptText="Введите кол-во" />
+         <TextField fx:id="Freight_upper" layoutX="237.0" layoutY="124.0" prefHeight="25.0" prefWidth="118.0" promptText="Введите кол-во" />
+         <TextField fx:id="Bus" layoutX="237.0" layoutY="156.0" prefHeight="25.0" prefWidth="118.0" promptText="Введите кол-во" />
+         <TextField fx:id="Freight_under" layoutX="236.0" layoutY="92.0" prefHeight="25.0" prefWidth="118.0" promptText="Введите кол-во" />
+         <Label layoutX="3.0" layoutY="4.0" text="Виды автотранспорта">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label layoutX="26.0" layoutY="38.0" prefHeight="18.0" prefWidth="63.0" text="Легковой">
+            <font>
+               <Font size="10.0" />
+            </font>
+         </Label>
+         <Label layoutX="25.0" layoutY="66.0" prefHeight="27.0" prefWidth="191.0" text="Автофургоны и микроавтобусы до 3.5 т">
+            <font>
+               <Font size="10.0" />
+            </font>
+         </Label>
+         <Label layoutX="25.0" layoutY="104.0" prefHeight="18.0" prefWidth="95.0" text="Грузовые 3.5 - 12т">
+            <font>
+               <Font size="10.0" />
+            </font>
+         </Label>
+         <Label layoutX="25.0" layoutY="136.0" prefHeight="18.0" prefWidth="102.0" text="Грузовые свыше 12т">
+            <font>
+               <Font size="10.0" />
+            </font>
+         </Label>
+         <Label layoutX="24.0" layoutY="166.0" prefHeight="18.0" prefWidth="102.0" text="Автобусы свыше 3.5 т">
+            <font>
+               <Font size="10.0" />
+            </font>
+         </Label>
+         <TextField fx:id="Distanse" layoutX="235.0" layoutY="225.0" prefHeight="25.0" prefWidth="118.0" promptText="Введите кол-во" />
+         <Label layoutX="23.0" layoutY="233.0" prefHeight="18.0" prefWidth="130.0" text="Длина участка дороги (Км)">
+            <font>
+               <Font size="10.0" />
+            </font>
+         </Label>
+         <Label layoutX="24.0" layoutY="279.0" prefHeight="18.0" prefWidth="130.0" text="Скорость">
+            <font>
+               <Font size="10.0" />
+            </font>
+         </Label>
+         <ComboBox fx:id="Speed_combobox" layoutX="234.0" layoutY="273.0" prefHeight="0.0" prefWidth="125.0" promptText="Выберите " />
+         <Label layoutX="376.0" layoutY="5.0" prefHeight="18.0" prefWidth="238.0" text="Выброс загрязняющего вещества" />
+         <Line endX="265.0" endY="1.0" layoutX="100.0" layoutY="5.0" startX="-100.0" />
+         <Line endX="-100.29287719726562" endY="186.3333282470703" layoutX="465.0" layoutY="11.0" startX="-100.29287719726562" startY="-4.292886734008789" />
+         <Line endX="265.0" endY="1.0" layoutX="100.0" layoutY="198.0" startX="-100.0" />
+         <Line endX="-100.29287719726562" endY="186.3333282470703" layoutX="100.0" layoutY="11.0" startX="-100.29287719726562" startY="-4.292886734008789" />
+         <Label layoutX="428.0" layoutY="44.0" prefHeight="18.0" prefWidth="63.0" text="CO =">
+            <font>
+               <Font size="10.0" />
+            </font>
+         </Label>
+         <TextField fx:id="CO" editable="false" layoutX="470.0" layoutY="34.0" prefHeight="21.0" prefWidth="118.0" />
+         <TextField fx:id="NO" editable="false" layoutX="470.0" layoutY="80.0" prefHeight="25.0" prefWidth="118.0" />
+         <TextField fx:id="CH" editable="false" layoutX="470.0" layoutY="126.0" prefHeight="25.0" prefWidth="118.0" />
+         <TextField fx:id="Soot" editable="false" layoutX="470.0" layoutY="172.0" prefHeight="25.0" prefWidth="118.0" />
+         <TextField fx:id="SO" editable="false" layoutX="470.0" layoutY="218.0" prefHeight="25.0" prefWidth="118.0" />
+         <TextField fx:id="Formaldehyde" editable="false" layoutX="470.0" layoutY="262.0" prefHeight="25.0" prefWidth="118.0" />
+         <TextField fx:id="Benzopyrene" editable="false" layoutX="470.0" layoutY="308.0" prefHeight="25.0" prefWidth="118.0" />
+         <Label layoutX="429.0" layoutY="91.0" prefHeight="18.0" prefWidth="63.0" text="NO =">
+            <font>
+               <Font size="10.0" />
+            </font>
+         </Label>
+         <Label layoutX="429.0" layoutY="131.0" prefHeight="18.0" prefWidth="63.0" text="CH =">
+            <font>
+               <Font size="10.0" />
+            </font>
+         </Label>
+         <Label layoutX="429.0" layoutY="178.0" prefHeight="18.0" prefWidth="63.0" text="Сажа =">
+            <font>
+               <Font size="10.0" />
+            </font>
+         </Label>
+         <Label layoutX="429.0" layoutY="224.0" prefHeight="18.0" prefWidth="63.0" text="SO =">
+            <font>
+               <Font size="10.0" />
+            </font>
+         </Label>
+         <Label layoutX="384.0" layoutY="270.0" prefHeight="18.0" prefWidth="83.0" text="Формальдегид =">
+            <font>
+               <Font size="10.0" />
+            </font>
+         </Label>
+         <Label layoutX="399.0" layoutY="316.0" prefHeight="18.0" prefWidth="84.0" text="Бензопирен =">
+            <font>
+               <Font size="10.0" />
+            </font>
+         </Label><ImageView fx:id="Shaman" fitHeight="217.0" fitWidth="209.0" layoutX="203.0" layoutY="381.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@1.jpg" />
+         </image>
+      </ImageView>
+      </children>
+   </AnchorPane>
+</VBox>
