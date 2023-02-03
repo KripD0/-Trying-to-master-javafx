@@ -121,7 +121,7 @@ public class HelloController implements Initializable {
         SO.setText(String.valueOf(String.format("%.5f", So2Output)));
         Formaldehyde.setText(String.valueOf(String.format("%.5f", formaldehyde)));
         Benzopyrene.setText(String.valueOf(String.format("%.5f", benzopyrene)));
-        Image myimage = new Image(getClass().getResourceAsStream("icon.png"));
+        Image myimage = new Image(getClass().getResourceAsStream("icon.jpg"));
         Shaman.setImage(myimage);
     }
 

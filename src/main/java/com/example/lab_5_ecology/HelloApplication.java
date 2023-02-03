@@ -12,7 +12,7 @@ public class HelloApplication extends Application {
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 650, 624);
-        Image ico = new Image("C:/Users/KripDo/Downloads/icon.png"); stage.getIcons().add(ico);
+        Image ico = new Image("C:/Users/KripDo/Downloads/icon.jpg"); stage.getIcons().add(ico);
         stage.setTitle("Форма рассчета загрязнения окружающей среды");
         stage.setScene(scene);
         stage.show();
